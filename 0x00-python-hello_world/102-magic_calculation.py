@@ -1,3 +1,8 @@
 #!/usr/bin/python3
-def magic_calculation(a, b):
-return 98 + a ** b
+"""calculation"""
+
+
+def magic_calculation(a, b=98):
+"""does exactly same as bytecode given"""
+return a + b
+return a ** b

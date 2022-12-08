@@ -19,7 +19,7 @@ def roman_to_int(roman_string):
             if i < len(roman_string) - 1:
                 nextR = roman_string[i + 1]
             if i == len(roman_string) - 1:
-                num+= roman_nums[key]
+                num += roman_nums[key]
             elif roman_nums[key] < roman_nums[nextR]:
                 num -= roman_nums[key]
             else:

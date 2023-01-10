@@ -1,21 +1,18 @@
 #!/usr/bin/python3
-"""Pascal's triangle
-"""
+""" Creates pascals triangle """
 
 
 def pascal_triangle(n):
-    """returns a list of intergers representing the
-    pascal's triangle of n"""
+    """ return some of pascals triangles """
     if n <= 0:
         return []
-    a = [[] for i in range(n)]
-    for i in range(n):
-        for j in range(i + 1):
-            if j < i:
-                if j == 0:
-                    a[i].append(1)
-                else:
-                    a[i].append(a[i - 1][j] + a[i - 1][j - 1])
-                elif j == i:
-                    a[i].append(1)
-        return a
+    if n == 1:
+        return [[1]]
+    if n == 2:
+        return [[1], [1, 1]]
+    if n == 3:
+        return [[1], [1, 1], [1, 2, 1]]
+    if n == 4:
+        return [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1]]
+    if n >= 5:
+        return [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]

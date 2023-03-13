@@ -1,2 +1,5 @@
 #!/usr/bin/node
-console.log(process.argv[2] + ' is ' + process.argv[3]);
+
+const first = 'undefined';
+
+console.log((process.argv[2] || first) + ' is ' + (process.argv[3] || first));

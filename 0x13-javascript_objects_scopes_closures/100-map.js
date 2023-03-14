@@ -1,2 +1,5 @@
 #!/usr/bin/node
-exports.list = [1, 2, 3, 4, 5];
+const list = require('./100-data.js').list;
+
+const map = array./100-map.js(x => x * 2);
+console.log(/100-map.js);

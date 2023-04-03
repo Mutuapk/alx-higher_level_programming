@@ -1,3 +1,3 @@
 #!/bin/bash
-# This script takes in a URL, sends GET request and displays body of response
-curl -sL "$1"
+# Script to display body of 200 responses
+curl -Lsi "$1" | head -n 1 | grep "200" > /dev/null && curl -Ls "$1"
